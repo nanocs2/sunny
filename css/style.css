@@ -1,0 +1,248 @@
+* {
+    cursor: default;
+}
+
+body {
+    background-color: #0A0A0A;
+    color: #FFF;
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+section {
+    margin: auto;
+}
+
+.container {
+    width: 1112px;  
+    margin: auto;
+}
+
+a {
+    text-decoration: none;  
+    color: #FFF;
+}
+
+.nav {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav img:hover {
+    cursor: pointer;
+}
+
+.nav__text {
+    font-size: 12px;
+    transition: 0.2s ease   ;
+}
+
+.nav__text:hover {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+}
+
+.nav__href {
+    cursor: pointer;
+}
+
+.faq {
+    margin-top: 45px;
+    position: relative;
+}
+
+.faq::after {
+    content: url(/img/backFaq.png);
+    top: -102px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+}
+
+h2 {
+    text-align: center;
+    color: #FFA500;
+    font-size: 33.274px;
+    font-weight: 700;
+}
+
+.faq__title {
+    width: 73px;
+    display: block;
+    margin: auto;
+}
+
+.faq-card {
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-card__item {
+    width: 538px;
+    height: 99px;
+    display: flex;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    border-image: linear-gradient(#FFFFFF, #FFFFFF, #FFA500);
+    -moz-border-image: -moz-linear-gradient(#FFFFFF, #FFFFFF, #FFA500);
+    -webkit-border-image: -webkit-linear-gradient(#FFFFFF, #FFFFFF, #FFA500);
+    border-image-slice: 1;
+    align-items: center;
+    margin-top: 25px;
+    transition: 0.5s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.faq-card__item span {
+    width: 494px;
+    display: block;
+    font-size: 25.181px;
+    text-align: left;
+    padding-left: 21px;
+    cursor: pointer;
+}
+
+.faq-card__item::after {
+    content: url(/img/arrow.svg);
+    display: block;
+    position: absolute;
+    top: 37.5px;
+    right: 23px;
+}
+
+.faq-card__item:hover {
+    transition: 0.5s ease;
+    background: linear-gradient(268deg, #FFA500 0%, #FFB800 100%);
+}
+
+.questions {
+   padding-top: 150px;
+}
+
+.questions__title span {
+    color: #FFF;
+}
+
+.questions__form {
+    padding-top: 35px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    cursor: pointer;
+    outline: none;
+}
+
+.form__input {
+    width: 307px;
+    height: 58px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    background-color: #0A0A0A;
+    color: #FFF;
+    text-align: center;
+    font-size: 26.656px;
+    background: linear-gradient(#FFA500, #FFFFFF, #FFFFFF);
+    box-shadow: inset 0px 0px 0px 100vw #0A0A0A;
+    background-size: 101%;
+    background-position: left -1px top 0px;
+    /* border-image: linear-gradient(#FFFFFF, #FFFFFF, #FFA500);
+    -moz-border-image: -moz-linear-gradient(#FFFFFF, #FFFFFF, #FFA500);
+    -webkit-border-image: -webkit-linear-gradient(#FFFFFF, #FFFFFF, #FFA500);
+    border-image-slice: 1; */
+}
+
+.form__number {
+    margin-left: 24px;
+    position: relative;
+    text-align: left;
+}
+
+.form__therms {
+    margin: auto;
+    width: 455px;
+}
+
+.form__therms span {
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+.form__checkbox {
+    margin: auto;
+    margin-top: 24px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+footer {
+    padding-bottom: 24px;
+}
+
+.form__btn {
+    margin: auto;
+    width: 256px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 0.5px solid #FFF;
+    background: linear-gradient(268deg, #FFA500 0%, #FFC700 100%);
+    font-size: 17.35px;
+    margin-top: 24px;
+}
+
+.fproducers {
+    padding-top: 150px;
+}
+
+.fproducers__title {
+    text-align: left;
+}
+
+.fproducers__title span {
+    color: #FFF;
+}
+
+.fproducers__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -15px;
+}
+
+.fproducers__btn {
+    min-width: 380px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 0.5px solid #FFF;
+    background: linear-gradient(268deg, #FFA500 0%, #FFC700 100%);
+    font-size: 17.35px;
+}
+
+.fproducers p {
+    text-align: center;
+    padding-top: 32px;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 26.586px;
+}
