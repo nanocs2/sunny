@@ -16,12 +16,12 @@ section {
 }
 
 .container {
-    width: 1112px;  
+    width: 1112px;
     margin: auto;
 }
 
 a {
-    text-decoration: none;  
+    text-decoration: none;
     color: #FFF;
 }
 
@@ -32,13 +32,21 @@ a {
     align-items: center;
 }
 
+.menu-burger__checkbox {
+    display: none;
+}
+
+.menu-burger__nav {
+    display: none;
+}
+
 .nav img:hover {
     cursor: pointer;
 }
 
 .nav__text {
     font-size: 12px;
-    transition: 0.2s ease   ;
+    transition: 0.2s ease;
 }
 
 .nav__text:hover {
@@ -126,7 +134,7 @@ h2 {
 }
 
 .questions {
-   padding-top: 150px;
+    padding-top: 150px;
 }
 
 .questions__title span {
@@ -245,4 +253,175 @@ footer {
     color: #FFF;
     font-size: 16px;
     line-height: 26.586px;
+}
+
+@media (max-width: 1170px) {
+    .fproducers__block {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .fproducers__title {
+        min-width: 1000px;
+        text-align: center;
+    }
+
+    .fproducers__btn {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 990px) {
+    .container {
+        max-width: 990px;
+    }
+
+    .faq::after {
+        left: 51%;
+    }
+
+    .faq-card {
+        justify-content: center;
+    }
+
+    .fproducers__block {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .fproducers__title {
+        text-align: center;
+    }
+
+    .fproducers__btn {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 880px) {
+    .container {
+        max-width: 880px;
+    }
+
+    .faq::after {
+        display: none;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .container {
+        max-width: 650px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .mobile-menu--active {
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding: 0 16px;
+        top: 80px;
+        background: #FFA500;
+        max-width: 650px;
+        height: 100%;
+        z-index: 9999999;
+    }
+
+    .menu-burger__nav {
+        width: 40px;
+        height: 40px;
+        color: #FFA500;
+        display: block;
+        margin: auto;
+        margin-top: 24px;
+        transition: 0.2s ease;
+    }
+
+    .menu-burger__btn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+
+    .menu-burger__icon {
+        position: relative;
+        height: 3px;
+        width: 100%;
+        margin: auto;
+        background: #FFA500;
+        transition: 0.2s ease;
+    }
+
+    .menu-burger__icon::before,
+    .menu-burger__icon::after {
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        margin: auto;
+        background: #FFA500;
+        transition: 0.2s ease;
+    }
+
+    .menu-burger__icon::before,
+    .menu-burger__icon::after {
+        content: " ";
+    }
+
+    .menu-burger__icon::before {
+        top: 10px;
+    }
+
+    .menu-burger__icon::after {
+        bottom: 10px;
+    }
+
+    .menu-burger__nav--active {
+        opacity: 1;
+    }
+
+    .menu-burger__nav--active {
+        height: 100%;
+    }
+
+    .menu-burger__checkbox:checked~.menu-burger__btn .menu-burger__icon {
+        background: transparent;
+        transition: 0.2s ease;
+    }
+
+    .menu-burger__checkbox:checked~.menu-burger__btn .menu-burger__icon::before,
+    .menu-burger__checkbox:checked~.menu-burger__btn .menu-burger__icon::after {
+        top: 0;
+        transition: 0.2s ease;
+    }
+
+    .menu-burger__checkbox:checked~.menu-burger__btn .menu-burger__icon::after {
+        transition: 0.2s ease;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+
+    .menu-burger__checkbox:checked~.menu-burger__btn .menu-burger__icon::before {
+        transition: 0.2s ease;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+
+
+
 }
